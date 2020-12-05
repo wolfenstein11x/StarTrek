@@ -215,6 +215,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 20
   rotateSpeed: 100
+--- !u!114 &310917177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310917175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38019d8c10fb0c45958e036849f982c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torpedoPrefab: {fileID: 817627131802754380, guid: 67aeff163fd28f04683e4da0f00089be,
+    type: 3}
+  torpedoSound: {fileID: 8300000, guid: 84f55021c5d4028408beeef858205846, type: 3}
+  torpedoSoundVolume: 1
 --- !u!4 &310917179 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4433942057210488, guid: f805c7b2f982faf43833878e4f22ae2a,
@@ -512,7 +528,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756283738}
-  m_LocalRotation: {x: 0.11701426, y: 0.000000017088178, z: -0.0000000020133915, w: 0.99313027}
+  m_LocalRotation: {x: 0.11701426, y: -0.00000001708818, z: 0.0000000020133912, w: 0.99313027}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -667,7 +683,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.117014274, y: 0.00000003417636, z: -0.0000000040267834, w: 0.99313027}
+  m_LocalRotation: {x: 0.117014274, y: -0.00000003417636, z: 0.0000000040267834, w: 0.99313027}
   m_LocalPosition: {x: 0, y: 3.400001, z: 2.6000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
