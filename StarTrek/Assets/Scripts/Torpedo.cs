@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Torpedo : MonoBehaviour
 {
+    [Header("Visual Effects")]
+    [SerializeField] GameObject hitVFX;
+    [SerializeField] float explosionDuration;
+
+    [Header("Sound Effects")]
+    [SerializeField] AudioClip hitSound;
+    [SerializeField] [Range(0, 1)] float hitSoundVolume = 0.7f;
+
     public float torpedoSpeed = 8f;
     public float lifeDuration = 5f;
 
@@ -25,5 +33,13 @@ public class Torpedo : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+        GameObject boom = Instantiate(hitVFX, transform.position, Quaternion.identity) as GameObject;
+        Destroy(boom, explosionDuration);
+        AudioSource.PlayClipAtPoint(hitSound, transform.position, hitSoundVolume);
     }
 }

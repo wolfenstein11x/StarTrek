@@ -6,6 +6,7 @@ MonoImporter:
   defaultReferences:
   - torpedoPrefab: {fileID: 817627131802754380, guid: 67aeff163fd28f04683e4da0f00089be,
       type: 3}
+  - torpedoSound: {fileID: 8300000, guid: 6b814d7c62f0bbb4a85578a2b62b8b4a, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

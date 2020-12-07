@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scenes\BorgMotion.cs" />
+    <Compile Include="Assets\Scripts\Borg.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\ShipMotion.cs" />
     <Compile Include="Assets\Scripts\ShipShooting.cs" />

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5613131317285420276}
   - component: {fileID: 5948859415363591493}
   - component: {fileID: -1496197912666348673}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Torpedo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817627131802754380}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -123,5 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1874991f86170745aad28fa19177010, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitVFX: {fileID: 7062036299645323579, guid: e83c987b301ca7b428a444bff60453df, type: 3}
+  explosionDuration: 2
+  hitSound: {fileID: 8300000, guid: 76b1ac0eacf40c54ab822b6199773102, type: 3}
+  hitSoundVolume: 1
   torpedoSpeed: 20
   lifeDuration: 5
