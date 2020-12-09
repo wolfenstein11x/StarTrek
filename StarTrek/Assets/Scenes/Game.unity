@@ -187,7 +187,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143795533}
-  m_LocalRotation: {x: 0.1350594, y: 0.00000002587127, z: -0.0000000035264707, w: 0.9908376}
+  m_LocalRotation: {x: 0.13505943, y: -0.000000003916597, z: 5.33862e-10, w: 0.9908376}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -424,7 +424,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &756283738
 GameObject:
@@ -511,6 +511,11 @@ PrefabInstance:
       propertyPath: torpedoSound
       value: 
       objectReference: {fileID: 8300000, guid: 6b814d7c62f0bbb4a85578a2b62b8b4a, type: 3}
+    - target: {fileID: 310917177, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
+      propertyPath: torpedoPrefab
+      value: 
+      objectReference: {fileID: 817627131802754380, guid: 67aeff163fd28f04683e4da0f00089be,
+        type: 3}
     - target: {fileID: 1510364872509504, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
       propertyPath: m_Name
       value: StarSparrow1
@@ -1188,7 +1193,7 @@ PrefabInstance:
     - target: {fileID: 1611281519375245920, guid: 518e8328aa8fe2a47a716b08a15a61bc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1611281519375245920, guid: 518e8328aa8fe2a47a716b08a15a61bc,
         type: 3}

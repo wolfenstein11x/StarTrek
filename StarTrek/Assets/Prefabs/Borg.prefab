@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1611281519375245922}
   - component: {fileID: 1611281519375245923}
   - component: {fileID: 1611281519375245932}
+  - component: {fileID: 2768749018153885414}
   m_Layer: 9
   m_Name: Borg
   m_TagString: Untagged
@@ -107,3 +108,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 2
+--- !u!114 &2768749018153885414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611281519375245933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99ede20df283234a9ac67f4e1e16afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  borgTorpedoPrefab: {fileID: 2743787986185425791, guid: 6e28aa08ad977a742beadf8f49d51f72,
+    type: 3}
+  borgTorpedoSound: {fileID: 8300000, guid: 4f6cce5990e18824190256dace3b145a, type: 3}
+  borgTorpedoVolume: 1

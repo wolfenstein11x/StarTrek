@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d99ede20df283234a9ac67f4e1e16afb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - borgTorpedoPrefab: {fileID: 2743787986185425791, guid: 6e28aa08ad977a742beadf8f49d51f72,
+      type: 3}
+  - borgTorpedoSound: {fileID: 8300000, guid: 4f6cce5990e18824190256dace3b145a, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
