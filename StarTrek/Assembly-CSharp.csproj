@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scenes\BorgMotion.cs" />
     <Compile Include="Assets\Scripts\Borg.cs" />
+    <Compile Include="Assets\Scripts\BorgCannon.cs" />
     <Compile Include="Assets\Scripts\BorgShooting.cs" />
     <Compile Include="Assets\Scripts\BorgTorpedo.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />

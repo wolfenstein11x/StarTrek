@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class BorgShooting : MonoBehaviour
 {
+    [Header("Shoooting Parameters")]
+    [SerializeField] float minTimeBetweenShots;
+    [SerializeField] float maxTimeBetweenShots;
+    float shotCounter;
+    
     [Header("Projectiles")]
     [SerializeField] GameObject borgTorpedoPrefab;
 
@@ -14,23 +19,30 @@ public class BorgShooting : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Fire();
+        CountDownAndFire();
+    }
+
+    private void CountDownAndFire()
+    {
+        shotCounter -= Time.deltaTime;
+        if (shotCounter <= 0f)
+        {
+            Fire();
+            shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
+        }
     }
 
     private void Fire()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            GameObject torpedo = Instantiate(borgTorpedoPrefab);
-            torpedo.transform.position = transform.position + transform.forward;
-            torpedo.transform.rotation = transform.rotation;
-            AudioSource.PlayClipAtPoint(borgTorpedoSound, transform.position, borgTorpedoVolume);
-        }
+        GameObject torpedo = Instantiate(borgTorpedoPrefab);
+        torpedo.transform.position = transform.position + transform.forward;
+        torpedo.transform.rotation = transform.rotation;
+        AudioSource.PlayClipAtPoint(borgTorpedoSound, transform.position, borgTorpedoVolume);
     }
 }
