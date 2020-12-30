@@ -7,12 +7,14 @@ public class ShipShooting : MonoBehaviour
 
     [Header("Projectiles")]
     [SerializeField] GameObject torpedoPrefab;
-    
+
     [Header("Sound Effects")]
     [SerializeField] AudioClip torpedoSound;
     [SerializeField] float torpedoSoundVolume;
 
+    public float torpedoLoadTime = 5f;
 
+    bool torpedoReady = true;
 
     // Update is called once per frame
     void Update()
@@ -25,10 +27,26 @@ public class ShipShooting : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            GameObject torpedo = Instantiate(torpedoPrefab);
-            torpedo.transform.position = transform.position + transform.forward;
-            torpedo.transform.rotation = transform.rotation;
-            AudioSource.PlayClipAtPoint(torpedoSound, transform.position, torpedoSoundVolume);
+            if (!torpedoReady) { return; }
+
+            else
+            {
+                torpedoReady = false;
+                FindObjectOfType<TorpedoSlider>().ResetSlider();
+                GameObject torpedo = Instantiate(torpedoPrefab);
+                torpedo.transform.position = transform.position + transform.forward;
+                torpedo.transform.rotation = transform.rotation;
+                AudioSource.PlayClipAtPoint(torpedoSound, transform.position, torpedoSoundVolume);
+                StartCoroutine(LoadTorpedo());
+            }
         }
     }
+
+    IEnumerator LoadTorpedo()
+    {
+        yield return new WaitForSeconds(torpedoLoadTime);
+        torpedoReady = true;
+        FindObjectOfType<TorpedoSlider>().ChargeSlider();
+    }
+
 }
