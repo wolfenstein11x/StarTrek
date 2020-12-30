@@ -12,7 +12,7 @@ public class BorgTorpedo : MonoBehaviour
     [SerializeField] AudioClip hitSound;
     [SerializeField] [Range(0, 1)] float hitSoundVolume = 0.7f;
 
-    public float torpedoSpeed = 8f;
+    [SerializeField] float torpedoSpeed = 8f;
     public float lifeDuration = 5f;
 
     private float lifeTimer;
@@ -26,7 +26,7 @@ public class BorgTorpedo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.forward * torpedoSpeed * Time.deltaTime;
+        transform.position -= transform.forward * torpedoSpeed * Time.deltaTime;
         lifeTimer -= Time.deltaTime;
 
         if (lifeTimer <= 0f)

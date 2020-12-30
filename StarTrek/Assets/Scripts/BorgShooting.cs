@@ -25,10 +25,10 @@ public class BorgShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CountDownAndFire();
+        //CountDownAndFire();
     }
 
-    private void CountDownAndFire()
+    public void CountDownAndFire()
     {
         shotCounter -= Time.deltaTime;
         if (shotCounter <= 0f)

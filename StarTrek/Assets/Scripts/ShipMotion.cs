@@ -21,6 +21,7 @@ public class ShipMotion : MonoBehaviour
                             moveSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
 
         RotateShip();
+        Bob();
     }
 
     private void RotateShip()
@@ -43,6 +44,19 @@ public class ShipMotion : MonoBehaviour
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Rotate(0f, -rotateSpeed * Time.deltaTime, 0f);
+        }
+    }
+            
+    // delete Bob function
+    private void Bob()
+    {
+        if (Input.GetKey(KeyCode.Y))
+        {
+            transform.Translate(0f, moveSpeed * Time.deltaTime, 0f);
+        }
+        else if (Input.GetKey(KeyCode.H))
+        {
+            transform.Translate(0f, -moveSpeed * Time.deltaTime, 0f);
         }
     }
 }
