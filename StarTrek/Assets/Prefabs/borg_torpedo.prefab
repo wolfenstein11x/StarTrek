@@ -4851,5 +4851,5 @@ MonoBehaviour:
   explosionDuration: 2
   hitSound: {fileID: 8300000, guid: 76b1ac0eacf40c54ab822b6199773102, type: 3}
   hitSoundVolume: 1
-  torpedoSpeed: 100
+  torpedoSpeed: 200
   lifeDuration: 5

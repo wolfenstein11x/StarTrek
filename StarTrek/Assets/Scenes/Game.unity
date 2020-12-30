@@ -1858,7 +1858,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756283738}
-  m_LocalRotation: {x: 0.11701424, y: -0.000000017088176, z: 0.0000000020133912, w: 0.99313027}
+  m_LocalRotation: {x: 0.11701424, y: 0.000000017088182, z: -0.0000000020133921, w: 0.99313027}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2059,15 +2059,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 310917177, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
-      propertyPath: torpedoSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 6b814d7c62f0bbb4a85578a2b62b8b4a, type: 3}
-    - target: {fileID: 310917177, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
-      propertyPath: torpedoPrefab
-      value: 
-      objectReference: {fileID: 817627131802754380, guid: 67aeff163fd28f04683e4da0f00089be,
-        type: 3}
     - target: {fileID: 1510364872509504, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
       propertyPath: m_Name
       value: StarSparrow1
@@ -2115,18 +2106,6 @@ PrefabInstance:
     - target: {fileID: 4433942057210488, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4433942057210488, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4433942057210488, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4433942057210488, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
@@ -2401,7 +2380,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.117014244, y: -0.00000003417636, z: 0.000000004026784, w: 0.99313027}
+  m_LocalRotation: {x: 0.117014244, y: 0.00000003417636, z: -0.000000004026784, w: 0.99313027}
   m_LocalPosition: {x: -72.5, y: 5.23, z: -215.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
