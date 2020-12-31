@@ -13,6 +13,7 @@ public class BorgTorpedo : MonoBehaviour
     [SerializeField] [Range(0, 1)] float hitSoundVolume = 0.7f;
 
     [SerializeField] float torpedoSpeed = 8f;
+    public int damage = 10;
     public float lifeDuration = 5f;
 
     private float lifeTimer;
@@ -41,5 +42,8 @@ public class BorgTorpedo : MonoBehaviour
         GameObject boom = Instantiate(hitVFX, transform.position, Quaternion.identity) as GameObject;
         Destroy(boom, explosionDuration);
         AudioSource.PlayClipAtPoint(hitSound, transform.position, hitSoundVolume);
+
+        // if other is the player...
+        FindObjectOfType<ShipHealth>().ProcessHit();
     }
 }

@@ -14,7 +14,7 @@ public class ShipShooting : MonoBehaviour
 
     public float torpedoLoadTime = 5f;
 
-    bool torpedoReady = true;
+    public bool torpedoReady = true;
 
     // Update is called once per frame
     void Update()
@@ -37,16 +37,8 @@ public class ShipShooting : MonoBehaviour
                 torpedo.transform.position = transform.position + transform.forward;
                 torpedo.transform.rotation = transform.rotation;
                 AudioSource.PlayClipAtPoint(torpedoSound, transform.position, torpedoSoundVolume);
-                StartCoroutine(LoadTorpedo());
             }
         }
-    }
-
-    IEnumerator LoadTorpedo()
-    {
-        yield return new WaitForSeconds(torpedoLoadTime);
-        torpedoReady = true;
-        FindObjectOfType<TorpedoSlider>().ChargeSlider();
     }
 
 }

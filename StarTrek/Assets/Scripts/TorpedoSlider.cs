@@ -17,26 +17,22 @@ public class TorpedoSlider : MonoBehaviour
     public void ResetSlider()
     {
         StartCoroutine(ResetSliderCoroutine());
-        //mySlider.value = 0f;
     }
 
     IEnumerator ResetSliderCoroutine()
     {
-        for (float val = 1.0f; val >= 0f; val -= 0.02f)
+        mySlider.value = 0;
+
+        for (float val = 0.0f; val <= 1f; val += 0.002f)
         {
             mySlider.value = val;
             yield return null;
         }
+
+        FindObjectOfType<ShipShooting>().torpedoReady = true;
     }
 
-    public void ChargeSlider()
-    {
-        mySlider.value = 1f;
-    }
+    
 
-    // finish ChargeSlider coroutine
-    IEnumerator ChargeSliderCoroutine()
-    {
-        yield return null;
-    }
+    
 }
