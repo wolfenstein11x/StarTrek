@@ -25,7 +25,7 @@ public class BorgShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //CountDownAndFire();
+        
     }
 
     public void CountDownAndFire()

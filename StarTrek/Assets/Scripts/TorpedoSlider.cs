@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class TorpedoSlider : MonoBehaviour
 {
     Slider mySlider;
+    public float rechargeSpeed = 0.002f;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class TorpedoSlider : MonoBehaviour
     {
         mySlider.value = 0;
 
-        for (float val = 0.0f; val <= 1f; val += 0.002f)
+        for (float val = 0.0f; val <= 1f; val += rechargeSpeed)
         {
             mySlider.value = val;
             yield return null;
