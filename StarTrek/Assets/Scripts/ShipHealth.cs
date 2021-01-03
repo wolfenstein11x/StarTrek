@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ShipHealth : MonoBehaviour
 {
@@ -52,5 +53,7 @@ public class ShipHealth : MonoBehaviour
         GameObject DeathVFX = Instantiate(DeathExplosion, Player.transform.position, Quaternion.identity) as GameObject;
         AudioSource.PlayClipAtPoint(DeathExplosionSound, Player.transform.position, deathExplosionVolume);
         Destroy(DeathVFX, deathExplosionDuration);
+
+        FindObjectOfType<SceneLoader>().LoadLoseMenu();
     }
 }
