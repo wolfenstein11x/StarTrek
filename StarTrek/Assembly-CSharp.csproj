@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\BorgTorpedo.cs" />
     <Compile Include="Assets\Scripts\BorgVulnerability.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\ShipHealth.cs" />
     <Compile Include="Assets\Scripts\ShipMotion.cs" />
     <Compile Include="Assets\Scripts\ShipShooting.cs" />
