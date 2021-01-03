@@ -7,6 +7,8 @@ public class ShipMotion : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float rotateSpeed = 50f;
 
+    public float deathMotionSpeed = 5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +18,11 @@ public class ShipMotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!FindObjectOfType<ShipHealth>().isAlive) { return; }
+        if (!FindObjectOfType<ShipHealth>().isAlive) 
+        {
+            DeathMotion();
+            return; 
+        }
 
         transform.Translate(moveSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 
                             0f, 
@@ -60,5 +66,10 @@ public class ShipMotion : MonoBehaviour
         {
             transform.Translate(0f, -moveSpeed * Time.deltaTime, 0f);
         }
+    }
+
+    private void DeathMotion()
+    {
+        transform.Rotate(0f, 0f, deathMotionSpeed * Time.deltaTime);
     }
 }

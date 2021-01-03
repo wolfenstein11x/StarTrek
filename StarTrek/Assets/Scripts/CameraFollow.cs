@@ -16,6 +16,8 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
+        //if (!FindObjectOfType<ShipHealth>().isAlive) { return; }
+
         transform.position = (target.position + offset);
         transform.rotation = target.rotation;
     }
