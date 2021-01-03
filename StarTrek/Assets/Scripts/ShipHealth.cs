@@ -5,9 +5,19 @@ using UnityEngine.UI;
 
 public class ShipHealth : MonoBehaviour
 {
+    [SerializeField] GameObject Player;
+
+    [SerializeField] GameObject DeathExplosion;
+    [SerializeField] AudioClip DeathExplosionSound;
+    [SerializeField] [Range(0, 1)] float deathExplosionVolume;
+    public float deathExplosionDuration = 2f;
+
     [SerializeField] int startingHealth = 100;
     public float health;
+
     Slider mySlider;
+
+    public bool isAlive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -29,5 +39,18 @@ public class ShipHealth : MonoBehaviour
     {
         health -= FindObjectOfType<BorgTorpedo>().damage;
         mySlider.value = health / startingHealth;
+
+        if (health <= 0f)
+        {
+            ProcessPlayerDeath();
+        }
+    }
+
+    private void ProcessPlayerDeath()
+    {
+        isAlive = false;
+        GameObject DeathVFX = Instantiate(DeathExplosion, Player.transform.position, Quaternion.identity) as GameObject;
+        AudioSource.PlayClipAtPoint(DeathExplosionSound, Player.transform.position, deathExplosionVolume);
+        Destroy(DeathVFX, deathExplosionDuration);
     }
 }

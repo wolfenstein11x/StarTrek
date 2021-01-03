@@ -17,6 +17,8 @@ public class BorgAimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!FindObjectOfType<ShipHealth>().isAlive) { return; }
+
         AimY();
         ShootAtPlayer();
     }

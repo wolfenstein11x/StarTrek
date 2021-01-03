@@ -19,6 +19,8 @@ public class ShipShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!FindObjectOfType<ShipHealth>().isAlive) { return; }
+
         Fire();
     }
 
