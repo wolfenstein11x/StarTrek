@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 1611281519375245923}
   - component: {fileID: 1611281519375245932}
   - component: {fileID: 2768749018153885414}
+  - component: {fileID: 6428372136432898490}
   m_Layer: 9
   m_Name: Borg
   m_TagString: Untagged
@@ -258,6 +259,18 @@ MonoBehaviour:
     type: 3}
   borgTorpedoSound: {fileID: 8300000, guid: 4f6cce5990e18824190256dace3b145a, type: 3}
   borgTorpedoVolume: 1
+--- !u!114 &6428372136432898490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611281519375245933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8d7f1b183f55e4c9b17d7996e94640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1795113242981903345
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Borg : MonoBehaviour
 {
-    //[Header("Visual Effects")]
-    //[SerializeField] GameObject hitVFX;
+    // doesn't do anything right now
 
 
     // Start is called before the first frame update
