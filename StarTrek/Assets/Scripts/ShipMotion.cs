@@ -58,11 +58,11 @@ public class ShipMotion : MonoBehaviour
     // delete Bob function
     private void Bob()
     {
-        if (Input.GetKey(KeyCode.Y))
+        if (Input.GetKey(KeyCode.R))
         {
             transform.Translate(0f, moveSpeed * Time.deltaTime, 0f);
         }
-        else if (Input.GetKey(KeyCode.H))
+        else if (Input.GetKey(KeyCode.F))
         {
             transform.Translate(0f, -moveSpeed * Time.deltaTime, 0f);
         }

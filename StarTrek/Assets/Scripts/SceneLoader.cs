@@ -37,6 +37,11 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("Start_Menu");
     }
 
+    public void LoadControlsMenu()
+    {
+        SceneManager.LoadScene("Controls_Menu");
+    }
+
     public void LoadLoseMenu()
     {
         StartCoroutine(LoadLoseMenuCoroutine());

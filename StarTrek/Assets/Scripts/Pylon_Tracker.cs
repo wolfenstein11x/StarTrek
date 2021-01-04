@@ -19,9 +19,7 @@ public class Pylon_Tracker : MonoBehaviour
     }
 
     private void CheckPylons()
-    {
-        Debug.Log(GetComponentsInChildren<Pylon>().Length);
-
+    { 
         if (GetComponentsInChildren<Pylon>().Length <= 0)
         {
             Vulnerability.SetActive(true);  
