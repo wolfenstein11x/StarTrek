@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\BorgTorpedo.cs" />
     <Compile Include="Assets\Scripts\BorgVulnerability.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\Instruction_Displayer.cs" />
     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\Pylon.cs" />
     <Compile Include="Assets\Scripts\Pylon_Tracker.cs" />

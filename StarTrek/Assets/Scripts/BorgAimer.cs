@@ -8,6 +8,9 @@ public class BorgAimer : MonoBehaviour
     public float rotateBufferMin = -0.5f;
     public float rotateBufferMax = 0.5f;
 
+    public bool inFiringRange = false;
+    public bool inPylonRange = false;
+
     // Start is called before the first frame update
     void Start()
     {
