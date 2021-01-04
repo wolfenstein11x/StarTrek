@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.5, y: -0}
-  m_SizeDelta: {x: 539.104, y: 694.4264}
+  m_AnchoredPosition: {x: -0.000033379, y: -14}
+  m_SizeDelta: {x: 628.63245, y: 540.3666}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &177554565
 MonoBehaviour:
@@ -190,9 +190,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "W : Move forward\nS : Move Backward\nA : Move left\nD : Move right\nR
-    : Move up\nF : Move down\n\nspace bar : fire torpedo\n\narrow keys: rotate ship
-    \n"
+  m_Text: "W : Move forward\nA : Move left\nD : Move right\nUp Arrow : Move up\nDown
+    Arrow : Move down\nRight Arrow : Rotate right\nLeft Arrow : Rotate left\n\nspace
+    bar : fire torpedo\n\n \n"
 --- !u!222 &177554566
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -236,8 +236,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 283, y: 169.3}
-  m_SizeDelta: {x: 573.3291, y: 740.7742}
+  m_AnchoredPosition: {x: 321.8, y: 206.3}
+  m_SizeDelta: {x: 628.63257, y: 657.81885}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &243938330
 MonoBehaviour:

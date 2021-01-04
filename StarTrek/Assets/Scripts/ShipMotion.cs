@@ -24,26 +24,32 @@ public class ShipMotion : MonoBehaviour
             return; 
         }
 
-        transform.Translate(moveSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 
-                            0f, 
-                            moveSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
-
+        MoveShip();
         RotateShip();
-        Bob();
+        BobShip();
+    }
+
+    private void MoveShip()
+    {
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.Translate(0f, 0f, moveSpeed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Translate(-moveSpeed * Time.deltaTime, 0f, 0f);
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Translate(moveSpeed * Time.deltaTime, 0f, 0f);
+        }
     }
 
     private void RotateShip()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            transform.Rotate(-rotateSpeed * Time.deltaTime, 0f, 0f);
-        }
-
-        else if (Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.Rotate(rotateSpeed * Time.deltaTime, 0f, 0f);
-        }
-
+      
         if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Rotate(0f, rotateSpeed * Time.deltaTime, 0f);
@@ -55,14 +61,13 @@ public class ShipMotion : MonoBehaviour
         }
     }
             
-    // delete Bob function
-    private void Bob()
+    private void BobShip()
     {
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.Translate(0f, moveSpeed * Time.deltaTime, 0f);
         }
-        else if (Input.GetKey(KeyCode.F))
+        else if (Input.GetKey(KeyCode.DownArrow))
         {
             transform.Translate(0f, -moveSpeed * Time.deltaTime, 0f);
         }
