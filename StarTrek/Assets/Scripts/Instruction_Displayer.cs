@@ -12,12 +12,14 @@ public class Instruction_Displayer : MonoBehaviour
     bool inPylonRange;
 
     bool pylonInstructionPlayed = false;
+    bool weakspotInstructionPlayed = false;
+    bool borgDestroyedInstructionPlayed = false;
 
     // Start is called before the first frame update
     void Start()
     {
         DeactivateAllInstructions();
-        StartCoroutine(FlashInstruction(0, 3, 3));
+        StartCoroutine(FlashInstruction(0, 2, 3));
     }
 
     // Update is called once per frame
@@ -80,6 +82,16 @@ public class Instruction_Displayer : MonoBehaviour
             StartCoroutine(FlashInstruction(1, 1, 4));
             pylonInstructionPlayed = true;
         }
+    }
+
+    public void WeakspotDetectedInstruction()
+    {
+        StartCoroutine(FlashInstruction(2, 1, 5));
+    }
+
+    public void BorgDestroyedInstruction()
+    {
+        StartCoroutine(FlashInstruction(3, 1, 4));
     }
 
     

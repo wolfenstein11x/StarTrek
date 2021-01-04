@@ -19,6 +19,11 @@ public class Borg : MonoBehaviour
         
     }
 
+    private void OnDestroy()
+    {
+        FindObjectOfType<Instruction_Displayer>().BorgDestroyedInstruction();
+    }
 
-    
+
+
 }

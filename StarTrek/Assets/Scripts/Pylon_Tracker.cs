@@ -22,7 +22,7 @@ public class Pylon_Tracker : MonoBehaviour
     { 
         if (GetComponentsInChildren<Pylon>().Length <= 0)
         {
-            Vulnerability.SetActive(true);  
+            Vulnerability.SetActive(true);
         }
     }
 }
