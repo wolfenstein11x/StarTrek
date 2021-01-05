@@ -64,6 +64,11 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("Win_Menu");
     }
 
+    public void LoadCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
 
     public void QuitGame()
     {
