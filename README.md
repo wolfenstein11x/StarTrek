@@ -11,5 +11,5 @@ Music:
 Sound Effects:
 •	Kenney.nl
 
-Ship:
+Art:
 •	Star Sparrow Modular Spaceship package from the Unity Assets Store
