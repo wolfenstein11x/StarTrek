@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseWaitTime: 3
-  winWaitTime: 0
+  winWaitTime: 4

@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
-  controlID: 7148
+  controlID: 45591
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 7149
+  controlID: 45592
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 7179
+  controlID: 45565
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 7180
+  controlID: 45566
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -442,9 +442,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 94360000
       m_LastClickedID: 0
-      m_ExpandedIDs: 987affff027efffff67effff7a8affffc2faffff46fbffffc0360000ee360000483700009c370000d2370000da850000fa8500001a9000003a900000
+      m_ExpandedIDs: 9ee0fefff6f1feff44fffeffb02affff002bffff0c32ffff9ad8fffface6ffffaeecffff46fbffff583e0000e4450000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -504,9 +504,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 255.61095, y: 162.2366, z: 94.53125}
+    m_Target: {x: 308.18835, y: 144.98083, z: -398.51135}
     speed: 2
-    m_Value: {x: 255.61095, y: 162.2366, z: 94.53125}
+    m_Value: {x: 308.18835, y: 144.98083, z: -398.51135}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -556,9 +556,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 187.37883
+    m_Target: 153.4459
     speed: 2
-    m_Value: 187.37883
+    m_Value: 153.4459
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -622,19 +622,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Repos\Personal_Projects\StarTrek\StarTrek
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 61}
-    m_SelectedIDs: 4c360000
-    m_LastClickedID: 13900
+    m_SelectedIDs: 42360000
+    m_LastClickedID: 13890
     m_ExpandedIDs: 000000002e36000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
