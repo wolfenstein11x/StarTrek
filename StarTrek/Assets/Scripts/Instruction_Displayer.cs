@@ -8,12 +8,13 @@ public class Instruction_Displayer : MonoBehaviour
     [SerializeField] GameObject Player;
     [SerializeField] GameObject ReferencePoint;
 
-    bool inFiringRange;
+    bool inBorgMessageRange;
     bool inPylonRange;
 
     bool pylonInstructionPlayed = false;
     bool weakspotInstructionPlayed = false;
     bool borgDestroyedInstructionPlayed = false;
+    bool borgMessagePlayed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -27,20 +28,21 @@ public class Instruction_Displayer : MonoBehaviour
     {
         CheckRanges();
         PylonInstruction();
+        BorgMessage();
     }
     public void CheckRanges()
     {
         Vector3 distXYZ = Player.transform.position - ReferencePoint.transform.position;
         float zDist = Mathf.Abs(distXYZ.z);
        
-        if (zDist <= 950f)
+        if (zDist <= 550f)
         {
-            inFiringRange = true;
+            inBorgMessageRange = true;
         }
 
         else
         {
-            inFiringRange = false;
+            inBorgMessageRange = false;
         }
 
         if (zDist <= 200f)
@@ -62,6 +64,7 @@ public class Instruction_Displayer : MonoBehaviour
         }
     }
 
+
     IEnumerator FlashInstruction(int idx, int waitTime, int visibleTime)
     {
         yield return new WaitForSeconds(waitTime);
@@ -69,12 +72,14 @@ public class Instruction_Displayer : MonoBehaviour
         StartCoroutine(DeactivateInstruction(idx, visibleTime));
     }
 
+
     IEnumerator DeactivateInstruction(int idx, int waitTime)
     {
         yield return new WaitForSeconds(waitTime);
         Instructions[idx].SetActive(false);
     }
 
+    
     private void PylonInstruction()
     {
         if (inPylonRange && !pylonInstructionPlayed)
@@ -92,6 +97,15 @@ public class Instruction_Displayer : MonoBehaviour
     public void BorgDestroyedInstruction()
     {
         StartCoroutine(FlashInstruction(3, 1, 4));
+    }
+
+    private void BorgMessage()
+    {
+        if (inBorgMessageRange && !borgMessagePlayed)
+        {
+            StartCoroutine(FlashInstruction(4, 1, 4));
+            borgMessagePlayed = true;
+        }
     }
 
     
