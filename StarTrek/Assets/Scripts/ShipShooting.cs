@@ -5,8 +5,7 @@ using UnityEngine;
 public class ShipShooting : MonoBehaviour
 {
 
-    [Header("Projectiles")]
-    [SerializeField] GameObject torpedoPrefab;
+    [SerializeField] GameObject[] guns;
 
     [Header("Sound Effects")]
     [SerializeField] AudioClip torpedoSound;
@@ -21,25 +20,30 @@ public class ShipShooting : MonoBehaviour
     {
         if (!FindObjectOfType<ShipHealth>().isAlive) { return; }
 
-        Fire();
+        ProcessFiring();
     }
 
 
-    private void Fire()
+    void ProcessFiring()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetButton("Fire1"))
         {
-            if (!torpedoReady) { return; }
+            SetGunsActive(true);
+        }
 
-            else
-            {
-                torpedoReady = false;
-                FindObjectOfType<TorpedoSlider>().ResetSlider();
-                GameObject torpedo = Instantiate(torpedoPrefab);
-                torpedo.transform.position = transform.position + transform.forward;
-                torpedo.transform.rotation = transform.rotation;
-                AudioSource.PlayClipAtPoint(torpedoSound, transform.position, torpedoSoundVolume);
-            }
+        else
+        {
+            SetGunsActive(false);
+        }
+    }
+
+    private void SetGunsActive(bool isActive)
+    {
+        foreach (GameObject gun in guns)
+        {
+            var emissionModule = gun.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive;
+
         }
     }
 
