@@ -192,7 +192,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "W : Move forward\nA : Move left\nD : Move right\nUp Arrow : Move up\nDown
     Arrow : Move down\nRight Arrow : Rotate right\nLeft Arrow : Rotate left\n\nspace
-    bar : fire torpedo\n\n \n"
+    bar : Fire\n\n \n"
 --- !u!222 &177554566
 CanvasRenderer:
   m_ObjectHideFlags: 0

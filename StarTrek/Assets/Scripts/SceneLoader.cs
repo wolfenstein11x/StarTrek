@@ -8,6 +8,8 @@ public class SceneLoader : MonoBehaviour
     public int loseWaitTime = 3;
     public int winWaitTime = 3;
 
+    private const int GAME_SCENE = 3;
+
     int currentSceneIndex;
 
     // Start is called before the first frame update
@@ -20,7 +22,7 @@ public class SceneLoader : MonoBehaviour
     void Update()
     {
         // if you are in the Game scene and all the borg are destroyed, go to the win scene
-        if (currentSceneIndex == 1 && FindObjectsOfType<Borg>().Length == 0)
+        if (currentSceneIndex == GAME_SCENE && FindObjectsOfType<Borg>().Length == 0)
         {
             LoadWinMenu();
         }

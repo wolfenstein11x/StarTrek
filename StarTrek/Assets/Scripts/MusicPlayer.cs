@@ -7,23 +7,34 @@ public class MusicPlayer : MonoBehaviour
 {
     AudioSource loadMenuAudioSource;
     int currentSceneIndex;
-    int winSceneIndex = 3;
-    int loseSceneIndex = 2;
 
-    void Start()
+    private const int CREDITS_SCENE = 2;
+
+    void Awake()
     {
-        DontDestroyOnLoad(this);
-        loadMenuAudioSource = GetComponent<AudioSource>();
+        int numMusicPlayers = FindObjectsOfType<MusicPlayer>().Length;
+
+        if (numMusicPlayers > 1)
+        {
+            Destroy(gameObject);
+        }
+
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+
+        
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        
-        if ((currentSceneIndex == winSceneIndex) || (currentSceneIndex == loseSceneIndex))
+
+        if (currentSceneIndex > CREDITS_SCENE)
         {
-            loadMenuAudioSource.volume = 0;
+            Destroy(gameObject);
         }
     }
+
 }
