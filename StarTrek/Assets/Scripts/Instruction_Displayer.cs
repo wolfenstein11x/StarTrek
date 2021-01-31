@@ -9,6 +9,9 @@ public class Instruction_Displayer : MonoBehaviour
     [SerializeField] GameObject ReferencePoint;
     [SerializeField] int visibleTime = 5;
 
+    private Borg[] currentBorgCount;
+    private int prevBorgCount;
+
     bool inBorgMessageRange;
     bool inPylonRange;
 
@@ -22,6 +25,8 @@ public class Instruction_Displayer : MonoBehaviour
     {
         DeactivateAllInstructions();
         StartCoroutine(FlashInstruction(0, 2, 3));
+        currentBorgCount = FindObjectsOfType<Borg>();
+        prevBorgCount = currentBorgCount.Length;
     }
 
     // Update is called once per frame
@@ -30,6 +35,18 @@ public class Instruction_Displayer : MonoBehaviour
         CheckRanges();
         PylonInstruction();
         BorgMessage();
+    }
+
+    private void CheckBorgCount()
+    {
+        currentBorgCount = FindObjectsOfType<Borg>();
+        
+        if (currentBorgCount.Length < prevBorgCount)
+        {
+            BorgDestroyedInstruction();
+            prevBorgCount = currentBorgCount.Length;
+
+        }
     }
     public void CheckRanges()
     {
