@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BorgTorpedo : MonoBehaviour
 {
+    
     [Header("Visual Effects")]
     [SerializeField] GameObject hitVFX;
     [SerializeField] float explosionDuration;
@@ -36,6 +37,7 @@ public class BorgTorpedo : MonoBehaviour
         }
     }
 
+    
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
@@ -43,16 +45,17 @@ public class BorgTorpedo : MonoBehaviour
         Destroy(boom, explosionDuration);
         AudioSource.PlayClipAtPoint(hitSound, transform.position, hitSoundVolume);
 
-        // if other is the player...
-        if (other.name == "Player")
+        // if its hitting the shields...
+        if (other.name == "Shields")
+        {
+            FindObjectOfType<ShieldsHealth>().ProcessShieldsHit();
+        }
+
+        else
         {
             FindObjectOfType<ShipHealth>().ProcessHit();
         }
-
-        if (other.name == "Shields")
-        {
-            print("hit shields");
-        }
         
     }
+    
 }

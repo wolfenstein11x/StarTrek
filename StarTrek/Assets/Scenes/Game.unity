@@ -362,9 +362,8 @@ GameObject:
   m_Component:
   - component: {fileID: 58654798}
   - component: {fileID: 58654799}
-  - component: {fileID: 58654800}
   m_Layer: 5
-  m_Name: Torpedo_Slider
+  m_Name: Shield_Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -442,19 +441,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &58654800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58654797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5dc1bb9952e1214daf9332ae94aff45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rechargeSpeed: 0.009
 --- !u!1 &78569198
 GameObject:
   m_ObjectHideFlags: 0
@@ -16063,7 +16049,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756283738}
-  m_LocalRotation: {x: 0.11701424, y: -0.000000017088176, z: 0.0000000020133912, w: 0.99313027}
+  m_LocalRotation: {x: 0.11701424, y: 0.000000017088182, z: -0.0000000020133921, w: 0.99313027}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -16442,7 +16428,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.117014244, y: -0.00000003417636, z: 0.000000004026784, w: 0.99313027}
+  m_LocalRotation: {x: 0.117014244, y: 0.00000003417636, z: -0.000000004026784, w: 0.99313027}
   m_LocalPosition: {x: -49.98007, y: 5, z: -1118}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -16590,7 +16576,6 @@ GameObject:
   m_Component:
   - component: {fileID: 975446713}
   - component: {fileID: 975446714}
-  - component: {fileID: 975446715}
   m_Layer: 5
   m_Name: Health_Slider
   m_TagString: Untagged
@@ -16670,27 +16655,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &975446715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975446712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43c003d55aca3ff459e411d0e88261fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 1584818981}
-  DeathExplosion: {fileID: 4010788511224879444, guid: f9324599b4ebf694ca6cd6e47499c979,
-    type: 3}
-  DeathExplosionSound: {fileID: 8300000, guid: eb1790c6351262c4ea4050ae2d4a596e, type: 3}
-  deathExplosionVolume: 1
-  deathExplosionDuration: 5
-  startingHealth: 100
-  health: 0
-  isAlive: 1
 --- !u!1 &1059225199
 GameObject:
   m_ObjectHideFlags: 0
@@ -17419,6 +17383,7 @@ GameObject:
   - component: {fileID: 1553480046}
   - component: {fileID: 1553480045}
   - component: {fileID: 1553480044}
+  - component: {fileID: 1553480047}
   m_Layer: 0
   m_Name: Shields
   m_TagString: Untagged
@@ -17500,12 +17465,48 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553480042}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1553480047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553480042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2870a53df10683f4aa614ef104a3c01a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldsSlider: {fileID: 58654799}
+  startingShields: 100
+  shields: 0
 --- !u!1 &1584818981 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1510364872509504, guid: f805c7b2f982faf43833878e4f22ae2a,
     type: 3}
   m_PrefabInstance: {fileID: 875167408}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1584818982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584818981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c003d55aca3ff459e411d0e88261fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 975446714}
+  DeathExplosion: {fileID: 4010788511224879444, guid: f9324599b4ebf694ca6cd6e47499c979,
+    type: 3}
+  DeathExplosionSound: {fileID: 8300000, guid: eb1790c6351262c4ea4050ae2d4a596e, type: 3}
+  deathExplosionVolume: 1
+  deathExplosionDuration: 2
+  startingHealth: 100
+  health: 0
+  isAlive: 1
 --- !u!1 &1651434341
 GameObject:
   m_ObjectHideFlags: 0

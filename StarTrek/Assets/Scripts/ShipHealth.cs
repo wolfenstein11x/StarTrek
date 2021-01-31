@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class ShipHealth : MonoBehaviour
 {
-    [SerializeField] GameObject Player;
+    [SerializeField] Slider healthSlider;
+    
 
     [SerializeField] GameObject DeathExplosion;
     [SerializeField] AudioClip DeathExplosionSound;
@@ -14,18 +15,19 @@ public class ShipHealth : MonoBehaviour
     public float deathExplosionDuration = 2f;
 
     [SerializeField] int startingHealth = 100;
+    
     public float health;
-
-    Slider mySlider;
+    
 
     public bool isAlive = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        mySlider = GetComponent<Slider>();
-        mySlider.value = 1.0f;
+        healthSlider.value = 1.0f;
+        
         health = startingHealth;
+        
     }
 
     // Update is called once per frame
@@ -34,12 +36,13 @@ public class ShipHealth : MonoBehaviour
         
     }
 
+    
 
     // make ProcessHit more flexible so it can process damage from other projectiles
     public void ProcessHit()    // give it an input parameter
     {
         health -= FindObjectOfType<BorgTorpedo>().damage;
-        mySlider.value = health / startingHealth;
+        healthSlider.value = health / startingHealth;
 
         if (health <= 0f)
         {
@@ -47,11 +50,15 @@ public class ShipHealth : MonoBehaviour
         }
     }
 
+    
+
+
+
     private void ProcessPlayerDeath()
     {
         isAlive = false;
-        GameObject DeathVFX = Instantiate(DeathExplosion, Player.transform.position, Quaternion.identity) as GameObject;
-        AudioSource.PlayClipAtPoint(DeathExplosionSound, Player.transform.position, deathExplosionVolume);
+        GameObject DeathVFX = Instantiate(DeathExplosion, transform.position, Quaternion.identity) as GameObject;
+        AudioSource.PlayClipAtPoint(DeathExplosionSound, transform.position, deathExplosionVolume);
         Destroy(DeathVFX, deathExplosionDuration);
 
         FindObjectOfType<SceneLoader>().LoadLoseMenu();
