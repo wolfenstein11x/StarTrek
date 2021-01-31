@@ -477,8 +477,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -92, y: 45}
-  m_SizeDelta: {x: 180.27191, y: 81.16141}
+  m_AnchoredPosition: {x: -116.01, y: 57.295}
+  m_SizeDelta: {x: 228.29285, y: 105.751465}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &78569200
 MonoBehaviour:
@@ -649,7 +649,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143795533}
-  m_LocalRotation: {x: 0.13505939, y: 0.000000014764631, z: -0.000000002012545, w: 0.9908376}
+  m_LocalRotation: {x: 0.1350594, y: -8.7190273e-16, z: -3.0907555e-15, w: 0.9908376}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -691,8 +691,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30.985, y: 0.0000066757}
-  m_SizeDelta: {x: 118.30267, y: 81.16139}
+  m_AnchoredPosition: {x: 37.2, y: -0.000025749}
+  m_SizeDelta: {x: 138.31876, y: 105.75145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &151478777
 MonoBehaviour:
@@ -715,7 +715,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 12
+    m_FontSize: 20
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 1
@@ -726,8 +726,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: We've detected a weak spot on one of the Borg ships. We should target it
-    with torpedos
+  m_Text: Captain, I've deteced a Borg ship's weak spot
 --- !u!222 &151478778
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -770,8 +769,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -59.151, y: 0.000023842}
-  m_SizeDelta: {x: 61.96926, y: 81.161415}
+  m_AnchoredPosition: {x: -75, y: 0}
+  m_SizeDelta: {x: 77.91587, y: 102.046745}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &156166347
 MonoBehaviour:
@@ -1119,8 +1118,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.1, y: 0.0000066757}
-  m_SizeDelta: {x: 102.138855, y: 81.16139}
+  m_AnchoredPosition: {x: 41.914, y: -0.000014305}
+  m_SizeDelta: {x: 144.46533, y: 105.75142}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &325649505
 MonoBehaviour:
@@ -1143,7 +1142,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 15
+    m_FontSize: 20
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 1
@@ -1266,8 +1265,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -62.2, y: 0.000023842}
-  m_SizeDelta: {x: 55.90783, y: 81.161415}
+  m_AnchoredPosition: {x: -75.9, y: -0.000025749}
+  m_SizeDelta: {x: 76.54887, y: 105.7515}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &520872815
 MonoBehaviour:
@@ -1379,8 +1378,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -92, y: 45}
-  m_SizeDelta: {x: 180.27191, y: 81.16141}
+  m_AnchoredPosition: {x: -116.01, y: 57.295}
+  m_SizeDelta: {x: 228.29239, y: 105.751434}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &677721575
 GameObject:
@@ -1549,8 +1548,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30.985, y: 0.0000066757}
-  m_SizeDelta: {x: 118.30267, y: 81.16139}
+  m_AnchoredPosition: {x: 39.058, y: -0.47284}
+  m_SizeDelta: {x: 150.1995, y: 101.101074}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &686714679
 MonoBehaviour:
@@ -1573,18 +1572,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 15
+    m_FontSize: 20
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 40
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Engage the Borg! That's an order!
+  m_Text: Engage the Borg! That's  an order!
 --- !u!222 &686714680
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1936,8 +1935,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -92, y: 45}
-  m_SizeDelta: {x: 180.27191, y: 81.16141}
+  m_AnchoredPosition: {x: -116.01, y: 57.295}
+  m_SizeDelta: {x: 228.29376, y: 105.75166}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &837110488
 MonoBehaviour:
@@ -2704,8 +2703,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -92, y: 45}
-  m_SizeDelta: {x: 180.27191, y: 81.16141}
+  m_AnchoredPosition: {x: -116.01, y: 57.295}
+  m_SizeDelta: {x: 228.29376, y: 105.751526}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1291719565
 MonoBehaviour:
@@ -2854,8 +2853,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -92, y: 45}
-  m_SizeDelta: {x: 180.27191, y: 81.16141}
+  m_AnchoredPosition: {x: -116, y: 57.3}
+  m_SizeDelta: {x: 228.31561, y: 105.74191}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1318732601
 MonoBehaviour:
@@ -3053,8 +3052,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -59.151, y: 0.000023842}
-  m_SizeDelta: {x: 61.96926, y: 81.161415}
+  m_AnchoredPosition: {x: -76.331, y: -1.289}
+  m_SizeDelta: {x: 75.28097, y: 103.173744}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1549122214
 MonoBehaviour:
@@ -3368,8 +3367,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -51.058, y: 0.000023842}
-  m_SizeDelta: {x: 78.17666, y: 81.161415}
+  m_AnchoredPosition: {x: -72.2, y: -0.00001812}
+  m_SizeDelta: {x: 83.763115, y: 105.75144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1819388473
 MonoBehaviour:
@@ -3516,8 +3515,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30.985, y: 0.0000066757}
-  m_SizeDelta: {x: 118.30267, y: 81.16139}
+  m_AnchoredPosition: {x: 37.728, y: 0.000020981}
+  m_SizeDelta: {x: 152.83728, y: 105.75169}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1851454297
 MonoBehaviour:
@@ -3540,7 +3539,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 15
+    m_FontSize: 20
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 1
@@ -3551,7 +3550,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Collect pylons to find a Borg ship's weak spot
+  m_Text: Collect pylons to find a Borg ship's        weak spot
 --- !u!222 &1851454298
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3733,7 +3732,7 @@ GameObject:
   - component: {fileID: 2070096055}
   - component: {fileID: 2070096054}
   m_Layer: 5
-  m_Name: Warf_Image
+  m_Name: Borg_Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3755,8 +3754,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -51.058, y: 0.000023842}
-  m_SizeDelta: {x: 78.17666, y: 81.161415}
+  m_AnchoredPosition: {x: -72, y: -0.0000066757}
+  m_SizeDelta: {x: 84.29977, y: 105.751396}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2070096054
 MonoBehaviour:
@@ -3829,8 +3828,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.1, y: 0.0000066757}
-  m_SizeDelta: {x: 102.138855, y: 81.16139}
+  m_AnchoredPosition: {x: 38.8, y: -0.00001049}
+  m_SizeDelta: {x: 137.29211, y: 105.75139}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075237262
 MonoBehaviour:
@@ -3853,7 +3852,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 12
+    m_FontSize: 18
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 1
@@ -3864,7 +3863,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: We are the Borg. You shall be assimilated. Resistance is futile.
+  m_Text: "We are the Borg. You shall be assimilated. Resistance \nis futile."
 --- !u!222 &2075237263
 CanvasRenderer:
   m_ObjectHideFlags: 0

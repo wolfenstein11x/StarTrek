@@ -28,7 +28,6 @@ public class ShipShooting : MonoBehaviour
     {
         if (Input.GetButton("Fire1"))
         {
-            print("shooting");
             SetGunsActive(true);
         }
 

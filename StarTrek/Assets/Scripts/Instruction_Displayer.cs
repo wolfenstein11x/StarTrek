@@ -7,6 +7,7 @@ public class Instruction_Displayer : MonoBehaviour
     [SerializeField] GameObject[] Instructions;
     [SerializeField] GameObject Player;
     [SerializeField] GameObject ReferencePoint;
+    [SerializeField] int visibleTime = 5;
 
     bool inBorgMessageRange;
     bool inPylonRange;
@@ -84,26 +85,26 @@ public class Instruction_Displayer : MonoBehaviour
     {
         if (inPylonRange && !pylonInstructionPlayed)
         {
-            StartCoroutine(FlashInstruction(1, 1, 4));
+            StartCoroutine(FlashInstruction(1, 1, visibleTime));
             pylonInstructionPlayed = true;
         }
     }
 
     public void WeakspotDetectedInstruction()
     {
-        StartCoroutine(FlashInstruction(2, 1, 5));
+        StartCoroutine(FlashInstruction(2, 1, visibleTime));
     }
 
     public void BorgDestroyedInstruction()
     {
-        StartCoroutine(FlashInstruction(3, 1, 4));
+        StartCoroutine(FlashInstruction(3, 1, visibleTime));
     }
 
     private void BorgMessage()
     {
         if (inBorgMessageRange && !borgMessagePlayed)
         {
-            StartCoroutine(FlashInstruction(4, 1, 4));
+            StartCoroutine(FlashInstruction(4, 1, visibleTime));
             borgMessagePlayed = true;
         }
     }
