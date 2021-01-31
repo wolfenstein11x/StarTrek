@@ -6,8 +6,13 @@ public class Instruction_Displayer : MonoBehaviour
 {
     [SerializeField] GameObject[] Instructions;
     [SerializeField] GameObject Player;
-    [SerializeField] GameObject ReferencePoint;
+    [SerializeField] Transform StartPoint;
+    [SerializeField] Transform BorgReferencePoint;
+    [SerializeField] Transform PylonReferencePoint;
     [SerializeField] int visibleTime = 5;
+
+    private float borgMessageMarker;
+    private float pylonMessageMarker;
 
     private Borg[] currentBorgCount;
     private int prevBorgCount;
@@ -27,12 +32,16 @@ public class Instruction_Displayer : MonoBehaviour
         StartCoroutine(FlashInstruction(0, 2, 3));
         currentBorgCount = FindObjectsOfType<Borg>();
         prevBorgCount = currentBorgCount.Length;
+
+        borgMessageMarker = Mathf.Abs(BorgReferencePoint.position.z);
+        pylonMessageMarker = Mathf.Abs(PylonReferencePoint.position.z);
     }
 
     // Update is called once per frame
     void Update()
     {
         CheckRanges();
+        CheckBorgCount();
         PylonInstruction();
         BorgMessage();
     }
@@ -50,10 +59,10 @@ public class Instruction_Displayer : MonoBehaviour
     }
     public void CheckRanges()
     {
-        Vector3 distXYZ = Player.transform.position - ReferencePoint.transform.position;
+        Vector3 distXYZ = Player.transform.position - StartPoint.position;
         float zDist = Mathf.Abs(distXYZ.z);
-       
-        if (zDist <= 550f)
+        
+        if (zDist >= borgMessageMarker)
         {
             inBorgMessageRange = true;
         }
@@ -63,7 +72,7 @@ public class Instruction_Displayer : MonoBehaviour
             inBorgMessageRange = false;
         }
 
-        if (zDist <= 200f)
+        if (zDist >= pylonMessageMarker)
         {
             inPylonRange = true;
         }
