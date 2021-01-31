@@ -44,6 +44,15 @@ public class BorgTorpedo : MonoBehaviour
         AudioSource.PlayClipAtPoint(hitSound, transform.position, hitSoundVolume);
 
         // if other is the player...
-        FindObjectOfType<ShipHealth>().ProcessHit();
+        if (other.name == "Player")
+        {
+            FindObjectOfType<ShipHealth>().ProcessHit();
+        }
+
+        if (other.name == "Shields")
+        {
+            print("hit shields");
+        }
+        
     }
 }
