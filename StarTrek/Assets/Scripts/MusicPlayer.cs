@@ -21,7 +21,7 @@ public class MusicPlayer : MonoBehaviour
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         
-        if (currentSceneIndex == winSceneIndex || currentSceneIndex == loseSceneIndex)
+        if ((currentSceneIndex == winSceneIndex) || (currentSceneIndex == loseSceneIndex))
         {
             loadMenuAudioSource.volume = 0;
         }
