@@ -190,12 +190,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Music:\n\n\tObserving the Star by yd from opengameart.org\n\t\n\tCan't
-    Stop Winning by InspectorJ (Patreon) from opengameart.org\n\n\tDark Ambience
-    Loop by Iwan Gabovitc http://opengameart.org/users/qubodup\n\n    Battle Music
-    by Alexandr Zhelanov - https://soundcloud.com/alexandr-zhelanov\n\nSound Effects:\n\n\tkenney.nl\n\nArt:\n\tStar
+  m_Text: "Music:\n\tObserving the Star by yd from opengameart.org\n\t\n\tCan't Stop
+    Winning by InspectorJ (Patreon) from opengameart.org\n\n\tDark Ambience Loop
+    by Iwan Gabovitc http://opengameart.org/users/qubodup\n\n    Battle Music by
+    Alexandr Zhelanov - https://soundcloud.com/alexandr-zhelanov\n\nSound Effects:\n\tkenney.nl\n\nArt:\n\tStar
     Sparrow Modular Spaceship Package from the Unity Assets Store\n\n    Skybox Volume
-    2, Hedgehog Team\n\t\n\n\n\n"
+    2, Hedgehog Team\n\n    World Materials Free by Avionx from Unity Assets Store\n\t\n\n\n\n"
 --- !u!222 &79800050
 CanvasRenderer:
   m_ObjectHideFlags: 0
